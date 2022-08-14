@@ -1,0 +1,6 @@
+"-javaagent:C:\\Users\\PROGRESS ICT MEDIA\\eclipse\\jee-2022-06\\eclipse\\configuration\\org.eclipse.osgi\\847\\0\\.cp\\jacocoagent.jar=includes=*,excludes=,exclclassloader=sun.reflect.DelegatingClassLoader,output=tcpclient,port=13993"
+-Dfile.encoding=UTF-8
+-classpath
+"C:\\Users\\PROGRESS ICT MEDIA\\eclipse-workspace\\CS1102\\bin"
+-XX:+ShowCodeDetailsInExceptionMessages
+Quiz

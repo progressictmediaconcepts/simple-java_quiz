@@ -1,0 +1,5 @@
+-Dfile.encoding=UTF-8
+-classpath
+"C:\\Users\\PROGRESS ICT MEDIA\\eclipse-workspace\\CS1102\\bin"
+-XX:+ShowCodeDetailsInExceptionMessages
+Quiz

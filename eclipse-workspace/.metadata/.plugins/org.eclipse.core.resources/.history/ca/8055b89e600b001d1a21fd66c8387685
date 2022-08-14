@@ -1,0 +1,6 @@
+package javafx.application;
+import javafx.application.Application
+
+public class IntroToGUI extends Application {
+
+}

@@ -1,0 +1,25 @@
+import javax.swing.*;
+
+
+public class TrueFalseQuestion extends Question {
+
+	
+	TrueFalseQuestion(String question, String answer){
+		super(question);
+		this.correctAnswer = answer;
+		
+		JPanel RadioButtons = new JPanel();
+		addButton(RadioButtons, "TRUE");
+		addButton(RadioButtons, "FALSE");
+		this.question.add(RadioButtons);
+		initQuestionDialog();
+		
+	}
+	
+	void addButton(JPanel buttons, String label) {
+		JButton button = new JButton(label);
+		button.addActionListener(question);
+		buttons.add(button);
+	}
+
+}

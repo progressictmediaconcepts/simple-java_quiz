@@ -1,0 +1,9 @@
+import javax.swing.JOptionPane;
+
+public class SuperPower {
+	
+public static void main(String[] args) {
+	String power = JOptionPane.showInputDialog("what is your super power?");
+	JOptionPane.showMessageDialog(null, power + " TO THE RESCUE!");
+}
+}

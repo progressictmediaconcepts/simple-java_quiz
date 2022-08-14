@@ -1,0 +1,10 @@
+
+public class TrueFalseQuestion extends Question {
+
+	@Override
+	String ask() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,25 @@
+import javax.swing.JOptionPane;
+
+
+public class TrueFalseQuestion extends Question {
+
+	@Override
+	String ask() {
+		while (true) {
+			String answer = JOptionPane.showInputDialog(question);
+			answer = answer.toUpperCase();
+			if (answer.equals("False") || answer.equals("FALSE") || answer.equals("f") || answer.equals("false") || answer.equals("t")
+					
+					){
+				return answer;	
+			}
+			
+		}
+	}
+	
+	TrueFalseQuestion(String question, String answer){
+		this.question = "TRUE or FALSE: " +question;
+		this.correctAnswer = answer;
+	}
+
+}

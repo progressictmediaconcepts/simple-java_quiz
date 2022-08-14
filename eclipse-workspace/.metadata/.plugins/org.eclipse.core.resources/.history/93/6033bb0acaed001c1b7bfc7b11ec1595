@@ -1,0 +1,8 @@
+import javax.swing.JOptionPane;
+
+public class SuperPower {
+	
+public static void main(String[] args) {
+	JOptionPane.showMessageDialog(null, "SUPER POWERS TO THE RESCUE");
+}
+}

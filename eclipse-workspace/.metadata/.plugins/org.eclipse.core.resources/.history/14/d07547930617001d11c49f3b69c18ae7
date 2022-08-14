@@ -1,0 +1,53 @@
+import java.awt.GridLayout;
+import java.awt.event.*;
+import javax.swing.*;
+
+public abstract class Question extends QuesionDialog{
+	static int nQuestions = 0;
+	static int nCorrect = 0;
+	
+	QuesionDialog question;
+	String correctAnswer;
+	
+	String ask() {
+		question.setVisible(true);
+		return question.answer;
+}
+	
+	Question(String question){
+		this.question = new QuesionDialog();
+		this.question.setLayout(new GridLayout(1, 1));
+		this.question.add(new JLabel("    " +question + "    ", JLabel.CENTER));
+	}
+	
+	
+	void initQuestionDialog() {
+		this.question.setModal(true);
+		this.question.pack();
+		this.question.setLocationRelativeTo(null);
+	}
+	
+	
+	
+	void check() {
+		nQuestions++;
+		
+		String answer = ask();
+		if (answer.equals(correctAnswer)) {
+			JOptionPane.showMessageDialog(null, " Correct!");
+			nCorrect++;
+		}
+		else if (answer != correctAnswer) {
+			JOptionPane.showMessageDialog(null, "That's not correct, try again");
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "Invalid input, only choose from option A to E");
+		}
+	}
+	
+	
+	static void showResult() {
+		JOptionPane.showMessageDialog(null,"Correct out of " + nQuestions+ " questions is " + nCorrect);
+	}
+
+}
